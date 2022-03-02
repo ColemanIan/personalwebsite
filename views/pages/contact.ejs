@@ -17,7 +17,13 @@
 		<p>
 			Send me an email for anything regarding work, opportunity, or outreach
 		</p>
-		<form>
+		<form
+			id="email-form"
+			class="flex-container-v column"
+			action="mailto:ian@ianwcoleman.com"
+			method="post"
+			enctype="multipart/form-data"
+		>
 			<label for="emailBox">Your email:</label>
 			<input
 				type="email"
@@ -34,6 +40,12 @@
 			/>
 			<label for="messagecontent">Message:</label>
 			<textarea rows="2" cols="30"></textarea>
+			<button type="submit" for="email-form" value="Submit">Submit</button>
 		</form>
+		<img
+			src="/1624889588152.jpg"
+			alt="Ian swinging an axe"
+			class="profilepic"
+		/>
 	</body>
 </html>
