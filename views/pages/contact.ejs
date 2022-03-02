@@ -1,0 +1,39 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scaled=1.0" \ />
+		<title>Ian Coleman Portfolio</title>
+		<link href="/stylesheets/styles.css" rel="stylesheet" />
+		<script type="module" src="script.js"></script>
+	</head>
+
+	<body>
+		<%- include ("../partials/navbar.ejs")%>
+
+		<h1>Contact me</h1>
+		<p>
+			Send me an email for anything regarding work, opportunity, or outreach
+		</p>
+		<form>
+			<label for="emailBox">Your email:</label>
+			<input
+				type="email"
+				id="emailBox"
+				placeholder="MrBigBucks@email.com"
+				required
+			/>
+			<label for="subjectbox">Subject:</label>
+			<input
+				type="text"
+				id="subjectbox"
+				placeholder="You want a job?"
+				required
+			/>
+			<label for="messagecontent">Message:</label>
+			<textarea rows="2" cols="30"></textarea>
+		</form>
+	</body>
+</html>
